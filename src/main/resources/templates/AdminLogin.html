@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Admin Login</title>
+</head>
+<body>
+  <h2>Admin Login Form</h2>
+  <form action="validate">
+  Enter Name:<input type="text" name="adminName"><br>
+  Enter Password:<input type="password" name="adminPass"><br>
+  <input type="submit" value="Login" >
+  </form>
+  <p th:text="${msg}"/>
+</body>
+</html> 

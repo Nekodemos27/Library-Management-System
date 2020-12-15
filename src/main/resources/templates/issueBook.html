@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Issue Book</title>
+</head>
+<body> 
+	<h2>Issue Book</h2>
+	<form action="issueBook" method="post">
+		Book Callno:<input type="text" name="callNo"> <br>
+		Student Id:<input type="number" name="studentId"> <br>
+		Student Name:<input type="text" name="studentName"> <br>
+		Student Contact: <input type="text" name="studentContact"> <br>
+		<input type="submit" value="Issue Book"> <br><br>
+	</form>
+	<a th:href="@{/liback}"><button>Back</button></a>		
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>View Librarian</title>
+</head>
+<body>
+	<h2>View Librarian</h2>
+	<table>
+		<tr>
+			<th>Call No</th>
+			<th>Name</th>
+			<th>Author</th>
+			<th>Publisher</th>
+			<th>Quantity</th>
+			<th>Issued</th>	
+		</tr>
+
+		<tr th:each="books: ${books}">
+			<td>
+				<p th:text=${books.callNo} />
+			</td>
+			<td>
+				<p th:text=${books.name} />
+			</td>
+			<td>
+				<p th:text=${books.author} />
+			</td>
+			<td>
+				<p th:text=${books.publisher} />
+			</td>
+			<td>
+				<p th:text=${books.quatity} />
+			</td>
+			<td>
+				<p th:text=${books.issued} />
+			</td>	
+		</tr>
+	</table>
+	<a th:href="@{/liback}"><button>Back</button></a>
+</body>
+</html>

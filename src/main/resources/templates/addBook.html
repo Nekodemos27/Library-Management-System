@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Add Books</title>
+</head>
+<body> 
+	<h2>Add Books</h2>
+	<form action="addBook" method="post">
+		Call No:<input type="text" name="callNo"> <br>
+		Name:<input type="text" name="name"> <br>
+		Author:<input type="text" name="author"> <br>
+		Publisher: <input type="text" name="publisher"> <br>
+		Quantity: <input type="text" name="quatity"> <br>
+		<input type="hidden" name="issued" value="0"> <br>
+		<input type="submit" value="Add Book"> <br><br>
+	</form>
+	<a th:href="@{/liback}"><button>Back</button></a>	
+	
+</body>
+</html>

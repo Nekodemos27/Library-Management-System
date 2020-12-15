@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Librarian Section</title>
+</head>
+<body>
+  
+  <h2>Librarian Section</h2>
+  <a th:href="@{/Book_Add}"><button>Add Books</button></a> <br><br>
+  <a th:href="@{/Book_View}"><button>View Books</button></a> <br><br>
+  <a th:href="@{/Book_issue}"><button>Issue Book</button></a> <br><br>
+  <a th:href="@{/Book_ViewIssued}"><button>View Issued Books</button></a> <br><br> 
+  <a th:href="@{/Book_Return}"><button>Return Books</button></a> <br><br>
+  <a th:href="@{/logout}"><button>Logout</button></a> 
+  <p th:text="${msg}">
+</body>
+</html>

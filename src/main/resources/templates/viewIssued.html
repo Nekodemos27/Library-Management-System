@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>View Issued</title>
+</head>
+<body>
+	<h2>View Issued Books</h2>
+	<table>
+		<tr>
+			<th>Book ID</th>
+			<th>Call No</th>
+			<th>Student ID</th>
+			<th>Student Name</th>
+			<th>Student Contact</th>
+			<th>Issued Date</th>	
+		</tr>
+
+		<tr th:each="issued: ${issued}">
+			<td>
+				<p th:text=${issued.books.id} />
+			</td>
+			<td>
+				<p th:text=${issued.books.callNo} />
+			</td>
+			<td>
+				<p th:text=${issued.student.id} />
+			</td>
+			<td>
+				<p th:text=${issued.student.name} />
+			</td>
+			<td>
+				<p th:text=${issued.student.contact} />
+			</td>
+			<td>
+				<p th:text=${'date'} />
+			</td>	
+		</tr>
+	</table>
+	<a th:href="@{/liback}"><button>Back</button></a>
+</body>
+</html>

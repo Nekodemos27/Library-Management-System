@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>View Librarian</title>
+</head>
+<body>
+	<h2>View Librarian</h2>
+	<table>
+		<tr>
+			<th>Id</th>
+			<th>Name</th>
+			<th>Password</th>
+			<th>Email</th>
+			<th>Address</th>
+			<th>City</th>
+			<th>Contact</th>		
+		</tr>
+
+		<tr th:each="librarian: ${librarian}">
+			<td>
+				<p th:text=${librarian.id} />
+			</td>
+			<td>
+				<p th:text=${librarian.name} />
+			</td>
+			<td>
+				<p th:text=${librarian.password} />
+			</td>
+			<td>
+				<p th:text=${librarian.email} />
+			</td>
+			<td>
+				<p th:text=${librarian.address} />
+			</td>
+			<td>
+				<p th:text=${librarian.city} />
+			</td>
+			<td>
+				<p th:text=${librarian.contact_no} />
+			</td>
+			<td> <a th:href="@{/updateLibrarian(id= ${librarian.id})}"> Update</a> </td>
+			<td> <a th:href="@{/deleteLibrarian(id= ${librarian.id})}"> Delete</a> </td>	
+		</tr>
+	</table>
+	<a th:href="@{/back}"><button>Back</button></a>	
+</body>
+</html>

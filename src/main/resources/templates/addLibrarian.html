@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Add Librarian</title>
+</head>
+<body> 
+	<h2>Add Librarian</h2>
+	<form action="addLibrarian" method="post">
+	Name:<input type="text" name="name"> <br>
+	Password:<input type="password" name="password"> <br>
+	Email: <input type="email" name="email"> <br>
+	Address: <input type="text" name="address"> <br>
+	City: <input type="text" name="city"> <br>
+	Contact No: <input type="number" min=6 name="contact_no"> <br>
+	<input type="submit" value="Add Librarian"> <br><br>
+	</form>
+	<a th:href="@{/back}"><button>Back</button></a>	
+	
+</body>
+</html>

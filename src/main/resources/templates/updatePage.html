@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Update Librarian</title>
+</head>
+<body>
+	<h2>Update Librarian</h2>
+	 <form action="updatedLibrarian">
+ 		  Id: <input type="text" name="id" th:value="${librarian.id}" readonly="readonly"> <br>
+ 		Name: <input type="text" name="name" th:value="${librarian.name}" > <br>
+ 		Password: <input type="text" name="password" th:value="${librarian.password}"> <br>
+ 		Email: <input type="text" name="email" th:value="${librarian.email}"> <br>
+ 		Address: <input type="text" name="address" th:value="${librarian.address}"> <br>
+ 		City: <input type="text" name="city" th:value="${librarian.city}"> <br>
+ 		Contact No: <input type="text" name="contact_no" th:value="${librarian.contact_no}"> <br>		 
+ 		<input type= "submit" value="Update">	
+ 	</form>
+
+</body>
+</html>

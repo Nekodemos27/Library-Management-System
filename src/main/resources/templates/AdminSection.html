@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Admin Section</title>
+</head>
+<body>
+  
+  <h2>Admin Section</h2>
+  <a th:href="@{/Librarian_Add}"><button>Add Librarian</button></a> <br><br>
+  <a th:href="@{/librarian_View}"><button>View Librarian</button></a> <br><br>
+  <a th:href="@{/logout}"><button>Logout</button></a>
+  
+  <p th:text="${msg}">
+</body>
+</html>

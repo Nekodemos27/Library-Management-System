@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Librarian Login</title>
+</head>
+<body>
+  <h2>Librarian Login Form</h2>
+  <form action="librarianValidate">
+  Enter Name:<input type="text" name="libName"><br>
+  Enter Password:<input type="password" name="libPass"><br>
+  <input type="submit" value="Login" >
+  </form>
+  <p th:text="${msg}"/>
+</body>
+</html> 

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Return Book</title>
+</head>
+<body>
+  <h2>Return Book</h2>
+  <form action="returnBook">
+  Book Callno:<input type="text" name="callNo"><br>
+  Student ID:<input type="number" name="studentId"><br>
+  <input type="submit" value="Return Book" >
+  </form>
+  <a th:href="@{/liback}"><button>Back</button></a>
+  <p th:text="${msg}"/>
+</body>
+</html> 
